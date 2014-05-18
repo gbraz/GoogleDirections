@@ -3,7 +3,12 @@ A classe que eu criei tem 3 métodos:
 -caminho: Retorna uma string com os passos do caminho em coordenadas
 geográficas.
 -polyline: Retorna uma string com o caminho no código polyline
+Obs.: Sobre polylines: https://developers.google.com/maps/documentation/staticmaps/?csw=1#EncodedPolylines
+
 
 IMPORTANTE: Para funcionar a classe usa uma biblioteca que converte as 
 informações do arquivo Json em objetos e arrays mais fáceis de manipular
 em Java. Ela pode ser baixada aqui: http://www.json.org/java/.
+
+Obs.: Aparentemente existem bibliotecas melhores, mas essa conseguiu resolver o problema. Se alguém tiver interesse em implementar com uma
+das outras fique à voltade.
