@@ -1,3 +1,7 @@
+23/05 - Adicionados a interface, org.json, e implementação dos métodos da interface
+	Ainda sucetíveis a mudanças.
+
+
 A classe que eu criei tem 3 métodos:
 -solicitação: Retorna uma string com o Json
 -caminho: Retorna uma string com os passos do caminho em coordenadas
@@ -6,7 +10,7 @@ geográficas.
 Obs.: Sobre polylines: https://developers.google.com/maps/documentation/staticmaps/?csw=1#EncodedPolylines
 
 
-IMPORTANTE: Para funcionar a classe usa uma biblioteca que converte as 
+IMPORTANTE: Para funcionar a classe usa o pacote org.json que converte as 
 informações do arquivo Json em objetos e arrays mais fáceis de manipular
 em Java. Ela pode ser baixada aqui: http://www.json.org/java/.
 
