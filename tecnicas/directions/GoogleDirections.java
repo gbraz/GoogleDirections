@@ -96,24 +96,6 @@ public class GoogleDirections implements ConsultasGoogle{
 		
 		return polylineStr;
 	}
-	
-	public static String getPolylineRef(String origem, String destino, String ... ptsRef){
-		String json = getJson(origem, destino);
-		
-		String polylineStr = "";
-		
-		JSONObject jsonObj = new JSONObject(json);
-		
-		JSONArray routes = jsonObj.getJSONArray("routes");
-		
-		JSONObject routes1 = routes.getJSONObject(0);
-		
-		JSONObject overviewPolyline = routes1.getJSONObject("overview_polyline");
-		
-		polylineStr = overviewPolyline.getString("points");
-
-		return polylineStr;
-	}
 
 	private static JSONObject legs1(String origem, String destino){
 		String json = getJson(origem, destino);
