@@ -1,3 +1,5 @@
+24/05 - Métodos de Json e Polyline agora pode receber pontos de referência
+	Criado método privado "legs" para evitar repetição de código
 23/05 - Adicionados a interface, org.json, e implementação dos métodos da interface
 	Ainda sucetíveis a mudanças.
 
