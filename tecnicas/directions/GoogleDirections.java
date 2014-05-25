@@ -22,7 +22,7 @@ public class GoogleDirections implements ConsultasGoogle{
 		String googleJson = null;
 		String googleOutput;
 		String waypoints;
-		String urlStr;
+
 		URL url;
 		
 		try {
@@ -34,13 +34,9 @@ public class GoogleDirections implements ConsultasGoogle{
 				waypoints = ptsRef[0];
 				for(int i = 1; i < ptsRef.length; i++)
 					waypoints = waypoints + "|" + ptsRef[i];
-				
-				urlStr = "http://maps.googleapis.com/maps/api/directions/json?origin=" + 
-				origem + "&destination=" + destino +"&waypoints="+waypoints + "&sensor=false";
-				
-				System.out.println(urlStr);
-				
-				url = new URL(urlStr);
+
+				url = new URL("http://maps.googleapis.com/maps/api/directions/json?origin=" + 
+						origem + "&destination=" + destino +"&waypoints="+waypoints + "&sensor=false");
 			}
 			//Abrindo conexão e recebendo o stream direto em forma de String
 			InputStream is = url.openStream();
